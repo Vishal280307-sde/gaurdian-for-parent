@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guardian for Parents — Parents AI Platform</title>
+    <meta
+      name="description"
+      content="Family digital-safety, scam defense, QR inspection, call-timing protection, and consent-first Parents AI financial insights."
+    />
+    <meta property="og:title" content="Guardian for Parents — Parents AI Platform" />
+    <meta
+      property="og:description"
+      content="Consent-first family safety, scam detection, QR intelligence, call timing watch, and Parents AI workspace."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var pref = localStorage.getItem('guardian_theme') || 'light';
+          var sysDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var resolved = pref === 'dark' || (pref === 'system' && sysDark) ? 'dark' : 'light';
+          var root = document.documentElement;
+          root.setAttribute('data-theme', resolved);
+          root.setAttribute('data-theme-pref', pref);
+          if (resolved === 'dark') root.classList.add('dark');
+          else root.classList.remove('dark');
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#FAF7F0] text-[#0B162C] dark:bg-[#070E1C] dark:text-[#F5F0E4] antialiased selection:bg-[#C8A45D]/30 selection:text-[#0B162C] dark:selection:text-[#FAF7F0]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
